@@ -1,0 +1,27 @@
+{
+  "name": "biraktim",
+  "version": "1.0.0",
+  "description": "Sigarayı bırakma sürecinde motivasyon artıracak yardımcı istatistik ve bilgiler içeren sayfa",
+  "main": "app.js",
+  "author": "Tufan Tunç",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp dev"
+  },
+  "dependencies": {
+    "@csstools/normalize.css": "^10.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}

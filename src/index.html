@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sigarayı Bıraktım</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Sigarayı bıraktı.</h1>
+        <p class="header__subtext">jake sigarayı bıraktı. Bu sayfa, sigarayı bırakma sürecinde ona yardım ediyor.</p>
+    </header>
+    <main>
+        <section class="stats">
+            <div class="stats__progress">
+                <div class="stats__animation" fraction="seconds">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+                        <circle class="bg" r="${radius}" cx="50" cy="50" />
+                        <circle
+                          class="prog"
+                          r="${radius}"
+                          cx="50"
+                          cy="50"
+                          stroke-dasharray="${circumference} ${circumference}"
+                          stroke-dashoffset="${offset}"
+                        />
+                      </svg>
+                </div>
+                <div class="stats__text">
+                    <h2></h2>
+                    <h3>Saniye</h3>
+                </div>
+            </div>
+            <div class="stats__progress">
+                <div class="stats__animation" fraction="minutes">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+                        <circle class="bg" r="${radius}" cx="50" cy="50" />
+                        <circle
+                          class="prog"
+                          r="${radius}"
+                          cx="50"
+                          cy="50"
+                          stroke-dasharray="${circumference} ${circumference}"
+                          stroke-dashoffset="${offset}"
+                        />
+                      </svg>
+                </div>
+                <div class="stats__text">
+                    <h2></h2>
+                    <h3>Dakika</h3>
+                </div>
+            </div>
+            <div class="stats__progress">
+                <div class="stats__animation" fraction="hours">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+                        <circle class="bg" r="${radius}" cx="50" cy="50" />
+                        <circle
+                          class="prog"
+                          r="${radius}"
+                          cx="50"
+                          cy="50"
+                          stroke-dasharray="${circumference} ${circumference}"
+                          stroke-dashoffset="${offset}"
+                        />
+                      </svg>
+                </div>
+                <div class="stats__text">
+                    <h2></h2>
+                    <h3>Saat</h3>
+                </div>
+            </div>
+            <div class="stats__progress">
+                <div class="stats__animation" fraction="days">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+                        <circle class="bg" r="${radius}" cx="50" cy="50" />
+                        <circle
+                          class="prog"
+                          r="${radius}"
+                          cx="50"
+                          cy="50"
+                          stroke-dasharray="${circumference} ${circumference}"
+                          stroke-dashoffset="${offset}"
+                        />
+                      </svg>
+                </div>
+                <div class="stats__text">
+                    <h2></h2>
+                    <h3>Gün</h3>
+                </div>
+            </div>
+            <div class="stats__progress">
+                <div class="stats__animation" fraction="weeks">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+                        <circle class="bg" r="${radius}" cx="50" cy="50" />
+                        <circle
+                          class="prog"
+                          r="${radius}"
+                          cx="50"
+                          cy="50"
+                          stroke-dasharray="${circumference} ${circumference}"
+                          stroke-dashoffset="${offset}"
+                        />
+                      </svg>
+                </div>
+                <div class="stats__text">
+                    <h2></h2>
+                    <h3>Hafta</h3>
+                </div>
+            </div>
+            <div class="stats__progress">
+                <div class="stats__animation" fraction="months">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+                        <circle class="bg" r="${radius}" cx="50" cy="50" />
+                        <circle
+                          class="prog"
+                          r="${radius}"
+                          cx="50"
+                          cy="50"
+                          stroke-dasharray="${circumference} ${circumference}"
+                          stroke-dashoffset="${offset}"
+                        />
+                      </svg>
+                </div>
+                <div class="stats__text">
+                    <h2></h2>
+                    <h3>Ay</h3>
+                </div>
+            </div>
+            <div class="stats__progress">
+                <div class="stats__animation" fraction="years">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
+                        <circle class="bg" r="${radius}" cx="50" cy="50" />
+                        <circle
+                          class="prog"
+                          r="${radius}"
+                          cx="50"
+                          cy="50"
+                          stroke-dasharray="${circumference} ${circumference}"
+                          stroke-dashoffset="${offset}"
+                        />
+                      </svg>
+                </div>
+                <div class="stats__text">
+                    <h2></h2>
+                    <h3>Yıl</h3>
+                </div>
+            </div>
+            <div class="stats__progressDark">
+                <div class="stats__text">
+                    <h2 id="js-savings">60</h2>
+                    <h3>kâr edildi.</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="https://birakabilirsin.org/sigarayi-birakma-nedenleri/" target="_blank" rel="noopener">birakabilirsin.org</a></li>
+            <li class="footer__item"><a class="footer__link" href="https://github.com" target="_blank" rel="noopener">github</a></li>
+            <li class="footer__item"><a class="footer__link" href="https://tufantunc.com" target="_blank" rel="noopener">tufan tunç</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

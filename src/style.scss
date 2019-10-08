@@ -1,0 +1,134 @@
+$pantone-color-of-the-year: #FA7268;
+@import "../node_modules/@csstools/normalize.css/opinionated.css";
+
+@mixin container {
+    margin: 0 auto;
+    @media (min-width: 1200px) {
+        max-width: 1024px;
+    }
+    @media (min-width: 1024) {
+        max-width: 960px;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $pantone-color-of-the-year;
+}
+
+.header {
+    @include container;
+    text-align: center;
+    padding: 6rem 0;
+
+    &__title {
+        font-size: 6rem;
+        line-height: 1;
+        margin: 0;
+    }
+
+    &__subtext {
+        font-size: 1.4rem;
+        margin: 1rem 0 0;
+    }
+}
+
+.footer {
+    @include container;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        border-right: 1px solid black;
+        padding: 0 0.8rem;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    &__link {
+        font-size: 0.8rem;
+        color: black;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.stats {
+    @include container;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    &__progress {
+        margin: 0.5rem;
+        padding: 1rem 0;
+        display: flex;
+
+        @media (min-width: 375px) {
+            width: calc(50% - 1rem);
+        }
+
+        @media (min-width: 780px) {
+            width: calc(25% - 1rem);
+        }
+
+        &Dark {
+            margin: 0.5rem;
+            padding: 1rem;
+            display: flex;
+            color: $pantone-color-of-the-year;
+            background-color: black;
+
+            @media (min-width: 375px) {
+                width: calc(50% - 3rem);
+            }
+
+            @media (min-width: 780px) {
+                width: calc(25% - 3rem);
+            }
+        }
+    }
+
+    &__animation {
+        width: 40px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column
+    }
+}
+
+svg {
+    transform: rotate(-90deg);
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  svg circle {
+    fill: none;
+    stroke-width: 50px;
+  }
+  svg circle.prog {
+    will-change: auto;
+    stroke: black;
+  }
+  svg circle.bg {
+    stroke: rgba(0, 0, 0, 0.1);
+  }
