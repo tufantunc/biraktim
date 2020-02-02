@@ -12,17 +12,17 @@ jobs:
 
     steps:
     - name: Checkout
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
     - name: Build with Node
-    - uses: actions/setup-node@v1
+      uses: actions/setup-node@v1
       with:
         node-version: '12.x'
     - name: Install Dependencies
-    - run: npm install
+      run: npm install
     - name: Build Project
-    - run: npm run build
+      run: npm run build
     - name: Deploy
-    - uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
