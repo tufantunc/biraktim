@@ -5,162 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sigarayı Bıraktım</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="Sigarayı bırakma sürecimde yardımcı istatistikler sunan sayfa, Tufan Tunç">
+
+    <!-- favicon settings -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1fae4a">
+    <meta name="apple-mobile-web-app-title" content="Bıraktım">
+    <meta name="application-name" content="Bıraktım">
+    <meta name="msapplication-TileColor" content="#FA7268">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FA7268">
+
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="https://biraktim.tufantunc.com">
+    <meta property="og:title" content="Sigarayı Bıraktım">
+    <meta property="og:description" content="Sigarayı bırakma sürecimde yardımcı istatistikler sunan sayfa">
+    <meta property="og:image" content="index_facebook_og.png">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@tufant">
+    <meta name="twitter:title" content="Sigarayı Bıraktım">
+    <meta name="twitter:description" content="Sigarayı bırakma sürecimde yardımcı istatistikler sunan sayfa">
+    <meta name="twitter:image" content="index_twitter_card.png">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">Sigarayı bıraktı.</h1>
-        <p class="header__subtext">jake sigarayı bıraktı. Bu sayfa, sigarayı bırakma sürecinde ona yardım ediyor.</p>
+        <h1 class="header__title">Sigarayı bıraktım</h1>
+        <p class="header__subtext">Ben Tufan, sigarayı bıraktım. Bu sayfa sigarayı bırakma sürecimde bana yardımcı istatistikler veriyor.</p>
     </header>
     <main>
         <section class="stats">
-            <div class="stats__progress">
-                <div class="stats__animation" fraction="seconds">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
-                        <circle class="bg" r="${radius}" cx="50" cy="50" />
-                        <circle
-                          class="prog"
-                          r="${radius}"
-                          cx="50"
-                          cy="50"
-                          stroke-dasharray="${circumference} ${circumference}"
-                          stroke-dashoffset="${offset}"
-                        />
-                      </svg>
+            <div class="stats__progress" fraction="seconds">
+                <div class="stats__animation">
+
                 </div>
                 <div class="stats__text">
-                    <h2></h2>
-                    <h3>Saniye</h3>
+                    <h2 class="stats__data"></h2>
+                    <h3 class="stats__type">Saniye</h3>
                 </div>
             </div>
-            <div class="stats__progress">
-                <div class="stats__animation" fraction="minutes">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
-                        <circle class="bg" r="${radius}" cx="50" cy="50" />
-                        <circle
-                          class="prog"
-                          r="${radius}"
-                          cx="50"
-                          cy="50"
-                          stroke-dasharray="${circumference} ${circumference}"
-                          stroke-dashoffset="${offset}"
-                        />
-                      </svg>
+            <div class="stats__progress" fraction="minutes">
+                <div class="stats__animation">
+
                 </div>
                 <div class="stats__text">
-                    <h2></h2>
-                    <h3>Dakika</h3>
+                    <h2 class="stats__data"></h2>
+                    <h3 class="stats__type">Dakika</h3>
                 </div>
             </div>
-            <div class="stats__progress">
-                <div class="stats__animation" fraction="hours">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
-                        <circle class="bg" r="${radius}" cx="50" cy="50" />
-                        <circle
-                          class="prog"
-                          r="${radius}"
-                          cx="50"
-                          cy="50"
-                          stroke-dasharray="${circumference} ${circumference}"
-                          stroke-dashoffset="${offset}"
-                        />
-                      </svg>
+            <div class="stats__progress" fraction="hours">
+                <div class="stats__animation">
+
                 </div>
                 <div class="stats__text">
-                    <h2></h2>
-                    <h3>Saat</h3>
+                    <h2 class="stats__data"></h2>
+                    <h3 class="stats__type">Saat</h3>
                 </div>
             </div>
-            <div class="stats__progress">
-                <div class="stats__animation" fraction="days">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
-                        <circle class="bg" r="${radius}" cx="50" cy="50" />
-                        <circle
-                          class="prog"
-                          r="${radius}"
-                          cx="50"
-                          cy="50"
-                          stroke-dasharray="${circumference} ${circumference}"
-                          stroke-dashoffset="${offset}"
-                        />
-                      </svg>
+            <div class="stats__progress" fraction="days">
+                <div class="stats__animation">
+
                 </div>
                 <div class="stats__text">
-                    <h2></h2>
-                    <h3>Gün</h3>
+                    <h2 class="stats__data"></h2>
+                    <h3 class="stats__type">Gün</h3>
                 </div>
             </div>
-            <div class="stats__progress">
-                <div class="stats__animation" fraction="weeks">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
-                        <circle class="bg" r="${radius}" cx="50" cy="50" />
-                        <circle
-                          class="prog"
-                          r="${radius}"
-                          cx="50"
-                          cy="50"
-                          stroke-dasharray="${circumference} ${circumference}"
-                          stroke-dashoffset="${offset}"
-                        />
-                      </svg>
+            <div class="stats__progress" fraction="weeks">
+                <div class="stats__animation">
+
                 </div>
                 <div class="stats__text">
-                    <h2></h2>
-                    <h3>Hafta</h3>
+                    <h2 class="stats__data"></h2>
+                    <h3 class="stats__type">Hafta</h3>
                 </div>
             </div>
-            <div class="stats__progress">
-                <div class="stats__animation" fraction="months">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
-                        <circle class="bg" r="${radius}" cx="50" cy="50" />
-                        <circle
-                          class="prog"
-                          r="${radius}"
-                          cx="50"
-                          cy="50"
-                          stroke-dasharray="${circumference} ${circumference}"
-                          stroke-dashoffset="${offset}"
-                        />
-                      </svg>
+            <div class="stats__progress" fraction="months">
+                <div class="stats__animation">
+
                 </div>
                 <div class="stats__text">
-                    <h2></h2>
-                    <h3>Ay</h3>
+                    <h2 class="stats__data"></h2>
+                    <h3 class="stats__type">Ay</h3>
                 </div>
             </div>
-            <div class="stats__progress">
-                <div class="stats__animation" fraction="years">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 100 100">
-                        <circle class="bg" r="${radius}" cx="50" cy="50" />
-                        <circle
-                          class="prog"
-                          r="${radius}"
-                          cx="50"
-                          cy="50"
-                          stroke-dasharray="${circumference} ${circumference}"
-                          stroke-dashoffset="${offset}"
-                        />
-                      </svg>
+            <div class="stats__progress" fraction="years">
+                <div class="stats__animation">
+
                 </div>
                 <div class="stats__text">
-                    <h2></h2>
-                    <h3>Yıl</h3>
+                    <h2 class="stats__data"></h2>
+                    <h3 class="stats__type">Yıl</h3>
                 </div>
             </div>
             <div class="stats__progressDark">
                 <div class="stats__text">
-                    <h2 id="js-savings">60</h2>
-                    <h3>kâr edildi.</h3>
+                    <h2 class="stats__data" id="js-savings"></h2>
+                    <h3 class="stats__type">kâr edildi.</h3>
                 </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="info__wrapper">
+                <h3 class="info__title">20 Dakika</h3>
+                <p class="info__text">Kalp hızı, kan basıncı düşer.</p>
+            </div>
+            <div class="info__wrapper">
+                <h3 class="info__title">12 Saat</h3>
+                <p class="info__text">Dolaşımdaki karbonmonoksit seviyesi normale düşer.</p>
+            </div>
+            <div class="info__wrapper">
+                <h3 class="info__title">2 Hafta - 3 Ay</h3>
+                <p class="info__text">Kan dolaşımı ve akciğer işlevleri düzelir, kalp krizi riski düşmeye başlar.</p>
+            </div>
+            <div class="info__wrapper">
+                <h3 class="info__title">1 – 9 Ay</h3>
+                <p class="info__text">Daha az öksürük olur, daha kolay nefes alınır.</p>
+            </div>
+            <div class="info__wrapper">
+                <h3 class="info__title">1 Yıl</h3>
+                <p class="info__text">Koroner kalp hastalığı riski yarıya düşer.</p>
+            </div>
+            <div class="info__wrapper">
+                <h3 class="info__title">2 - 5 Yıl</h3>
+                <p class="info__text">Ağız, boğaz, yutak, mesane kanseri riskleri yarıya iner, inme riski sigara içmeyenlerle aynı düzeye düşer.</p>
+            </div>
+            <div class="info__wrapper">
+                <h3 class="info__title">10 Yıl</h3>
+                <p class="info__text">Akciğer kanserinden ölme olasılığı yarı yarıya azalır, böbrek veya pankreas kanseri riski azalır.</p>
+            </div>
+            <div class="info__wrapper">
+                <h3 class="info__title">15 Yıl</h3>
+                <p class="info__text">Koroner kalp hastalığı riski sigara içmeyenlerle aynı olur.</p>
             </div>
         </section>
     </main>
     <footer class="footer">
         <ul class="footer__list">
             <li class="footer__item"><a class="footer__link" href="https://birakabilirsin.org/sigarayi-birakma-nedenleri/" target="_blank" rel="noopener">birakabilirsin.org</a></li>
-            <li class="footer__item"><a class="footer__link" href="https://github.com" target="_blank" rel="noopener">github</a></li>
+            <li class="footer__item"><a class="footer__link" href="https://github.com/tufantunc/biraktim" target="_blank" rel="noopener">github</a></li>
             <li class="footer__item"><a class="footer__link" href="https://tufantunc.com" target="_blank" rel="noopener">tufan tunç</a></li>
+            <li class="footer__item"><a class="footer__link" href="https://jakequits.com/" target="_blank" rel="noopener">esin kaynağı</a></li>
         </ul>
     </footer>
+    <script src="app.js" defer></script>
 </body>
 </html>

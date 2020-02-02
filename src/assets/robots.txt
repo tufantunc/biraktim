@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Site haritası: https://biratim.tufantunc.com/sitemap.xml
