@@ -29,7 +29,7 @@
     "gulp-sitemap": "^7.6.0",
     "gulp-tap": "^2.0.0",
     "node-sass": "^5.0.0",
-    "postcss": "^8.1.4",
+    "postcss": "^8.2.10",
     "puppeteer": "^5.4.1"
   }
 }
