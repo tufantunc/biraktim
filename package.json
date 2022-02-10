@@ -28,7 +28,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sitemap": "^7.6.0",
     "gulp-tap": "^2.0.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "postcss": "^8.1.4",
     "puppeteer": "^5.4.1"
   }
